@@ -95,7 +95,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    endif
   endif
 
-  syn clear
+  "syn clear
 
   " suppress escaped sequences that don't involve colors (which may or may not be ansi-compliant)
   if has("conceal")
