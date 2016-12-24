@@ -39,9 +39,9 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    return
   endif
   let bn= bufnr("%")
-  if !exists("s:AnsiEsc_enabled_{bn}")
-   let s:AnsiEsc_enabled_{bn}= 0
-  endif
+  "if !exists("s:AnsiEsc_enabled_{bn}")
+  let s:AnsiEsc_enabled_{bn}= 0
+  "endif
   if s:AnsiEsc_enabled_{bn}
    " disable AnsiEsc highlighting
 "   call Decho("disable AnsiEsc highlighting: s:AnsiEsc_ft_".bn."<".s:AnsiEsc_ft_{bn}."> bn#".bn)
